@@ -26,8 +26,8 @@ class Login extends Component {
     event.preventDefault()
     let {username, password} = this.state
 
-    if (username.toLowerCase().trim(' ') === 'vikas') username = 'rahul'
-    if (password === 'vikas@2024') password = 'rahul@2021'
+    if (username.toLowerCase().trim(' ') === 'jagadeesh') username = 'rahul'
+    if (password === 'jagadeesh@2025') password = 'rahul@2021'
 
     const userDetails = {username, password}
     const LoginApiUrl = 'https://apis.ccbp.in/login'
@@ -60,7 +60,7 @@ class Login extends Component {
           type="text"
           value={username}
           className="login-input-field"
-          placeholder="vikas"
+          placeholder="jagadeesh"
           id="username"
           onChange={this.updateUsername}
         />
@@ -79,7 +79,7 @@ class Login extends Component {
           type="password"
           value={password}
           className="login-input-field"
-          placeholder="vikas@2024"
+          placeholder="jagadeesh@2025"
           id="password"
           onChange={this.updatePassword}
         />
